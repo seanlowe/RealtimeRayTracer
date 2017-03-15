@@ -1,7 +1,7 @@
 #version 450
 out vec3 color;
 in vec2 ScreenCoord;
-#define PI 3.14159265359 
+#define PI 3.14159265359
 #define DIFF 0
 #define SPEC 1
 #define REFR 2
@@ -24,7 +24,7 @@ struct material
 	int refl_t;
 };
 
-struct ray 
+struct ray
 {
 	vec3 o,d;
 };
@@ -75,7 +75,7 @@ struct DirLight
 };
 
 #define NumDirLights 1
-#define DiskCount 2
+#define DiskCount 1
 #define SpheresCount 1
 
 int NumSpheres,NumDisks;
@@ -92,7 +92,7 @@ bool Intersect(ray r,int NumSpheres,int NumDisks,out float t,out int id,out int 
 	for(i = 0;i < NumDisks;i++){if(((tempt = IntersectDisk(r,Disks[i])) > .0) && (tempt < t) ? true : false){t = tempt;id = i;ObjType = DISK;}}
 	for(i = 0;i < NumSpheres;i++){if(((tempt = IntersectSphere(r,Spheres[i])) > .0) && (tempt < t) ? true : false){t = tempt; id = i;ObjType = SPHERE;}}
     return t < inf;
-    
+
 }
 
 
@@ -113,7 +113,7 @@ vec3 radiance(ray r)
 	    x = CRay.o + CRay.d * t;
 	    vec3 n,nl;
 	    material mat;
-	    
+
 		 if(ObjType == SPHERE)
 		 {
 			  n = normalize(x - Spheres[id].p);
@@ -125,10 +125,10 @@ vec3 radiance(ray r)
 			mat = Disks[id].Mat;
 		 }
 		 nl = n * sign(-dot(n, CRay.d));
-		 
+
 		if(mat.refl_t == DIFF)//diffuse reflection
 		{
-				
+
 			float r1 = 2*PI * rand();          //random angle
 			float r2 = rand(), r2s = sqrt(r2); //random distance
 		    vec3 w = nl;
@@ -141,7 +141,7 @@ vec3 radiance(ray r)
 		    for(int i = 0;i < SpheresCount; i++)
 		    {
 				if(Spheres[i].Mat.e.x <= 0 && Spheres[i].Mat.e.y <= 0 && Spheres[i].Mat.e.z <= 0) continue;
-				
+
 				vec3 sw=Spheres[i].p-x, su=normalize(cross((fabs(sw.x)>.1?vec3(.0,1.,.0):vec3(1.)),sw)), sv=cross(sw,su);
 				float cos_a_max = sqrt(1.-Spheres[i].rad*Spheres[i].rad/dot(x-Spheres[i].p,x-Spheres[i].p));
 				float eps1 = rand(), eps2 = rand();
@@ -182,7 +182,7 @@ vec3 radiance(ray r)
 			ray reflRay = CreateRay(x,reflect(CRay.d,n));
 			bool into = dot(n,nl)>0.;
 			float nc = 1, nt = 1.5, nnt=into ? nc/nt : nt/nc, ddn=dot(CRay.d,nl) ,cos2t;
-			
+
 			//total internal reflection
 			if((cos2t=1.-nnt*nnt*(1.-ddn*ddn))<0.)
 			{
@@ -190,12 +190,12 @@ vec3 radiance(ray r)
 		        mask *= mat.c;
 			    CRay = reflRay;
 			}
-			
+
 			//otherwise randomly chose reflection or refraction
 			vec3 tdir = normalize(CRay.d*vec3(nnt) - n*((into?vec3(1):vec3(-1))* vec3(ddn*nnt+sqrt(cos2t))));
 			float a = nt-nc, b=nt+nc, R0=a*a/(b*b), c = 1-(into?-ddn:dot(tdir,n));
 			float Re=R0+(1-R0)*c*c*c*c*c, Tr=1-Re,P=.25+.5*Re,RP=Re/P,TP=Tr/(1-P);
-			
+
 			if(rand() < P){mask *=RP;CRay=reflRay;}
 			else{mask*=TP;CRay=CreateRay(x,tdir);}
 	    }
@@ -208,9 +208,16 @@ uniform vec3 positionOld;
 uniform mat4 rotation = mat4(1);
 uniform mat4 OldRotation = mat4(1);
 uniform float HFov = 2.5;
-uniform float AspectRatio = (16. / 9.) ;
+uniform float AspectRatio ;
 uniform float Time;
 #define MotionBlur 1
+
+vec3 tone_map(vec3 inc)
+{
+    inc = inc / (inc + vec3(1.0));
+    return pow( clamp(inc,.0,1.),vec3(1/2.2));
+}
+
 
 void main()
 {
@@ -219,24 +226,26 @@ void main()
 	vec3 fcolor;
 	vec2 coords = vec2(ScreenCoord.x * AspectRatio * -1.,ScreenCoord.y * -1.);
 	seed = coords.x * coords.y * Time;
-	vec3 RayDir = (rotation * vec4(normalize(UpRCoord * vec3(coords,1.)),1.0)).xyz;
-	vec3 OldDir = (OldRotation * vec4(normalize(UpRCoord * vec3(coords,1.)),1.0)).xyz;
-	ray PrimaryRay = CreateRay(position ,RayDir);
-	
-	
-	
-    Spheres[0] = CreateSphere(30.0,vec3(0.,30.,0.), vec3(0.)  ,vec3(.75),vec3(0.),DIFF);
-    Disks[0]   = CreateDisk(200.0,vec3(.0,-1.0,0.0) ,vec3(0)   ,vec3(0.),vec3(.75),vec3(0.),DIFF);
-    
-    
-     DirLights[0].intensity = vec3(255.,205.,164.)/vec3(255.);
+	vec3 RayDir = (vec4(normalize(UpRCoord * vec3(coords,1.)),1.0) * rotation ).xyz;
+	vec3 OldDir = (vec4(normalize(UpRCoord * vec3(coords,1.)),1.0) * OldRotation ).xyz;
+	ray PrimaryRay = CreateRay(position  ,RayDir);
+
+
+
+    Spheres[0] = CreateSphere(30.0,vec3(0.,30.,0.), vec3(0.)  ,vec3(.75, .25, .25),vec3(0.),DIFF);
+	//Spheres[1] = CreateSphere(10.0,vec3(80.,60.,0.), vec3(10.)  ,vec3(.75),vec3(0.),DIFF);
+	//Spheres[1] = CreateSphere(3.0,vec3(100.,80.,0.), vec3(0.)  ,vec3(.75),vec3(0.),DIFF);
+    Disks[0]   = CreateDisk(200.0,vec3(.0,-1.0,0.0) ,vec3(0.)   ,vec3(0.),vec3(.75),vec3(0.),DIFF);
+
+
+     DirLights[0].intensity = vec3(7.0)*vec3(255.,205.,164.)/vec3(255.);
      DirLights[0].dir = normalize(vec3(1.,0.43,0.));
-     DirLights[0].MaxAngle = .80;
-   
-    
-    
+     DirLights[0].MaxAngle = 1.0;
+
+
+
 	int id,objType;
-	backGroundColor = vec3 (.145,.21,.36) * vec3(1.);
+	backGroundColor = vec3 (.145,.21,.36) * vec3(7.);
 	NumSpheres = SpheresCount;
 	NumDisks = DiskCount;
 	//color = !(Intersect(PrimaryRay,NumSpheres,NumDisks,t,id,objType))? vec3(.0): /*(objType == SPHERE)? Spheres[id].Mat.e : Disks[id].Mat.e;*/ vec3(1.0);
@@ -247,5 +256,6 @@ void main()
 		vec3 antialiasing = normalize(Dir + vec3(2*rand() - 1,2*rand() - 1,2*rand() - 1)/vec3(1200));
 	    fcolor += radiance(CreateRay(JPos,antialiasing))/ SAMPLESPF;
     }
-    color = pow( clamp(fcolor,.0,1.),vec3(1/2.2));
+
+    color = tone_map(fcolor);
 }

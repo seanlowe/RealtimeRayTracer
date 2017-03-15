@@ -30,10 +30,19 @@
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
+			<Add option="-std=c++11" />
+			<Add option="-DGLEW_STATIC" />
+			<Add directory="D:/oldesktop/opengltest/PT" />
+			<Add directory="C:/SDL/SDL2-2.0.4/x86_64-w64-mingw32/include" />
+			<Add directory="C:/glew/include" />
 		</Compiler>
 		<Linker>
-			<Add option="-O3 -fopenmp -lSDL2 -lGLEW -lGL" />
+			<Add option="-lmingw32 -lSDL2main -lSDL2 -lopengl32 -lglu32 -lglew32 -lglew32mx" />
+			<Add directory="D:/oldesktop/opengltest/PT/lib" />
+			<Add directory="C:/SDL/SDL2-2.0.4/x86_64-w64-mingw32/lib" />
 		</Linker>
+		<Unit filename="PT.frag" />
+		<Unit filename="PT.vert" />
 		<Unit filename="input.cpp" />
 		<Unit filename="input.h" />
 		<Unit filename="loadShader.cpp" />
@@ -43,6 +52,7 @@
 		<Extensions>
 			<code_completion />
 			<debugger />
+			<envvars />
 		</Extensions>
 	</Project>
 </CodeBlocks_project_file>

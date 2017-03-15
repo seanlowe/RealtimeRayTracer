@@ -1,0 +1,2061 @@
+# depslib dependency file v1.0
+1455373777 source:/home/antonino/Scrivania/opengltest/PT/loadShader.cpp
+	<iostream>
+	<fstream>
+	<vector>
+	<stdio.h>
+	<GL/glew.h>
+	<GL/gl.h>
+	<SDL2/SDL.h>
+	<SDL2/SDL_opengl.h>
+	"loadShader.h"
+
+1455373287 /home/antonino/Scrivania/opengltest/PT/loadShader.h
+
+1458299293 source:/home/antonino/Scrivania/opengltest/PT/main.cpp
+	<iostream>
+	<fstream>
+	<vector>
+	<stdio.h>
+	<GL/glew.h>
+	<GL/gl.h>
+	<SDL2/SDL.h>
+	<SDL2/SDL_opengl.h>
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+	"main.h"
+	"loadShader.h"
+	"input.h"
+
+1456572252 /home/antonino/Scrivania/opengltest/PT/main.h
+
+1456658819 source:/home/antonino/Scrivania/opengltest/PT/input.cpp
+	"input.h"
+
+1456660538 /home/antonino/Scrivania/opengltest/PT/input.h
+	<iostream>
+	<fstream>
+	<vector>
+	<stdio.h>
+	<GL/glew.h>
+	<GL/gl.h>
+	<SDL2/SDL.h>
+	<SDL2/SDL_opengl.h>
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+
+1459796335 source:c:\users\antonino\desktop\opengltest\pt\input.cpp
+	"input.h"
+
+1459078525 c:\users\antonino\desktop\opengltest\pt\input.h
+	<iostream>
+	<fstream>
+	<vector>
+	<stdio.h>
+	<GL/glew.h>
+	<GL/gl.h>
+	<SDL2/SDL.h>
+	<SDL2/SDL_opengl.h>
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+
+1460036021 source:c:\users\antonino\desktop\opengltest\pt\loadshader.cpp
+	<iostream>
+	<fstream>
+	<vector>
+	<stdio.h>
+	<GL/glew.h>
+	<GL/gl.h>
+	<SDL2/SDL.h>
+	<SDL2/SDL_opengl.h>
+	"loadShader.h"
+
+1459078754 c:\users\antonino\desktop\opengltest\pt\loadshader.h
+
+1460036076 source:c:\users\antonino\desktop\opengltest\pt\main.cpp
+	<iostream>
+	<fstream>
+	<vector>
+	<stdio.h>
+	<GL/glew.h>
+	<GL/gl.h>
+	<SDL2/SDL.h>
+	<SDL2/SDL_opengl.h>
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+	"main.h"
+	"loadShader.h"
+	"input.h"
+
+1459078525 c:\users\antonino\desktop\opengltest\pt\main.h
+
+1459078606 c:\users\antonino\desktop\opengltest\pt\\glm\glm.hpp
+	"detail/_fixes.hpp"
+	<cmath>
+	<climits>
+	<cfloat>
+	<limits>
+	<cassert>
+	"fwd.hpp"
+	"vec2.hpp"
+	"vec3.hpp"
+	"vec4.hpp"
+	"mat2x2.hpp"
+	"mat2x3.hpp"
+	"mat2x4.hpp"
+	"mat3x2.hpp"
+	"mat3x3.hpp"
+	"mat3x4.hpp"
+	"mat4x2.hpp"
+	"mat4x3.hpp"
+	"mat4x4.hpp"
+	"trigonometric.hpp"
+	"exponential.hpp"
+	"common.hpp"
+	"packing.hpp"
+	"geometric.hpp"
+	"matrix.hpp"
+	"vector_relational.hpp"
+	"integer.hpp"
+
+1459078598 c:\users\antonino\desktop\opengltest\pt\\glm\detail\_fixes.hpp
+	<cmath>
+
+1459078604 c:\users\antonino\desktop\opengltest\pt\\glm\fwd.hpp
+	"detail/type_int.hpp"
+	"detail/type_float.hpp"
+	"detail/type_vec.hpp"
+	"detail/type_mat.hpp"
+
+1459078562 c:\users\antonino\desktop\opengltest\pt\\glm\detail\type_int.hpp
+	"setup.hpp"
+	<type_traits>
+	<cstdint>
+
+1459078556 c:\users\antonino\desktop\opengltest\pt\\glm\detail\setup.hpp
+	<cassert>
+	<cstddef>
+	<cuda.h>
+	<intrin.h>
+	<immintrin.h>
+	<immintrin.h>
+	<smmintrin.h>
+	<pmmintrin.h>
+	<emmintrin.h>
+	<__config>
+
+1459078558 c:\users\antonino\desktop\opengltest\pt\\glm\detail\type_float.hpp
+	"setup.hpp"
+
+1459078582 c:\users\antonino\desktop\opengltest\pt\\glm\detail\type_vec.hpp
+	"precision.hpp"
+	"type_int.hpp"
+
+1459078556 c:\users\antonino\desktop\opengltest\pt\\glm\detail\precision.hpp
+
+1459078563 c:\users\antonino\desktop\opengltest\pt\\glm\detail\type_mat.hpp
+	"precision.hpp"
+
+1459078751 c:\users\antonino\desktop\opengltest\pt\\glm\vec2.hpp
+	"detail/type_vec2.hpp"
+
+1459078586 c:\users\antonino\desktop\opengltest\pt\\glm\detail\type_vec2.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec2.inl"
+
+1459078600 c:\users\antonino\desktop\opengltest\pt\\glm\detail\_swizzle.hpp
+
+1459078601 c:\users\antonino\desktop\opengltest\pt\\glm\detail\_swizzle_func.hpp
+
+1459078587 c:\users\antonino\desktop\opengltest\pt\\glm\detail\type_vec2.inl
+
+1459078752 c:\users\antonino\desktop\opengltest\pt\\glm\vec3.hpp
+	"detail/type_vec3.hpp"
+
+1459078589 c:\users\antonino\desktop\opengltest\pt\\glm\detail\type_vec3.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec3.inl"
+
+1459078591 c:\users\antonino\desktop\opengltest\pt\\glm\detail\type_vec3.inl
+
+1459078753 c:\users\antonino\desktop\opengltest\pt\\glm\vec4.hpp
+	"detail/type_vec4.hpp"
+
+1459078592 c:\users\antonino\desktop\opengltest\pt\\glm\detail\type_vec4.hpp
+	"setup.hpp"
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec4.inl"
+
+1459078594 c:\users\antonino\desktop\opengltest\pt\\glm\detail\type_vec4.inl
+	"type_vec4_sse2.inl"
+	"type_vec4_avx.inl"
+	"type_vec4_avx2.inl"
+
+1459078597 c:\users\antonino\desktop\opengltest\pt\\glm\detail\type_vec4_sse2.inl
+
+1459078595 c:\users\antonino\desktop\opengltest\pt\\glm\detail\type_vec4_avx.inl
+
+1459078596 c:\users\antonino\desktop\opengltest\pt\\glm\detail\type_vec4_avx2.inl
+
+1459078742 c:\users\antonino\desktop\opengltest\pt\\glm\mat2x2.hpp
+	"detail/type_mat2x2.hpp"
+
+1459078566 c:\users\antonino\desktop\opengltest\pt\\glm\detail\type_mat2x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x2.inl"
+
+1459078567 c:\users\antonino\desktop\opengltest\pt\\glm\detail\type_mat2x2.inl
+
+1459078743 c:\users\antonino\desktop\opengltest\pt\\glm\mat2x3.hpp
+	"detail/type_mat2x3.hpp"
+
+1459078568 c:\users\antonino\desktop\opengltest\pt\\glm\detail\type_mat2x3.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x3.inl"
+
+1459078569 c:\users\antonino\desktop\opengltest\pt\\glm\detail\type_mat2x3.inl
+
+1459078744 c:\users\antonino\desktop\opengltest\pt\\glm\mat2x4.hpp
+	"detail/type_mat2x4.hpp"
+
+1459078569 c:\users\antonino\desktop\opengltest\pt\\glm\detail\type_mat2x4.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x4.inl"
+
+1459078570 c:\users\antonino\desktop\opengltest\pt\\glm\detail\type_mat2x4.inl
+
+1459078745 c:\users\antonino\desktop\opengltest\pt\\glm\mat3x2.hpp
+	"detail/type_mat3x2.hpp"
+
+1459078571 c:\users\antonino\desktop\opengltest\pt\\glm\detail\type_mat3x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x2.inl"
+
+1459078572 c:\users\antonino\desktop\opengltest\pt\\glm\detail\type_mat3x2.inl
+
+1459078746 c:\users\antonino\desktop\opengltest\pt\\glm\mat3x3.hpp
+	"detail/type_mat3x3.hpp"
+
+1459078572 c:\users\antonino\desktop\opengltest\pt\\glm\detail\type_mat3x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x3.inl"
+
+1459078573 c:\users\antonino\desktop\opengltest\pt\\glm\detail\type_mat3x3.inl
+
+1459078746 c:\users\antonino\desktop\opengltest\pt\\glm\mat3x4.hpp
+	"detail/type_mat3x4.hpp"
+
+1459078575 c:\users\antonino\desktop\opengltest\pt\\glm\detail\type_mat3x4.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x4.inl"
+
+1459078576 c:\users\antonino\desktop\opengltest\pt\\glm\detail\type_mat3x4.inl
+
+1459078747 c:\users\antonino\desktop\opengltest\pt\\glm\mat4x2.hpp
+	"detail/type_mat4x2.hpp"
+
+1459078577 c:\users\antonino\desktop\opengltest\pt\\glm\detail\type_mat4x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x2.inl"
+
+1459078578 c:\users\antonino\desktop\opengltest\pt\\glm\detail\type_mat4x2.inl
+
+1459078748 c:\users\antonino\desktop\opengltest\pt\\glm\mat4x3.hpp
+	"detail/type_mat4x3.hpp"
+
+1459078578 c:\users\antonino\desktop\opengltest\pt\\glm\detail\type_mat4x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x3.inl"
+
+1459078579 c:\users\antonino\desktop\opengltest\pt\\glm\detail\type_mat4x3.inl
+
+1459078749 c:\users\antonino\desktop\opengltest\pt\\glm\mat4x4.hpp
+	"detail/type_mat4x4.hpp"
+
+1459078580 c:\users\antonino\desktop\opengltest\pt\\glm\detail\type_mat4x4.hpp
+	"../fwd.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x4.inl"
+
+1459078581 c:\users\antonino\desktop\opengltest\pt\\glm\detail\type_mat4x4.inl
+
+1459078751 c:\users\antonino\desktop\opengltest\pt\\glm\trigonometric.hpp
+	"detail/func_trigonometric.hpp"
+
+1459078541 c:\users\antonino\desktop\opengltest\pt\\glm\detail\func_trigonometric.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"func_trigonometric.inl"
+
+1459078542 c:\users\antonino\desktop\opengltest\pt\\glm\detail\func_trigonometric.inl
+	"_vectorize.hpp"
+	<cmath>
+	<limits>
+
+1459078602 c:\users\antonino\desktop\opengltest\pt\\glm\detail\_vectorize.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+
+1459078584 c:\users\antonino\desktop\opengltest\pt\\glm\detail\type_vec1.hpp
+	"../fwd.hpp"
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec1.inl"
+
+1459078584 c:\users\antonino\desktop\opengltest\pt\\glm\detail\type_vec1.inl
+
+1459078603 c:\users\antonino\desktop\opengltest\pt\\glm\exponential.hpp
+	"detail/func_exponential.hpp"
+
+1459078533 c:\users\antonino\desktop\opengltest\pt\\glm\detail\func_exponential.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	<cmath>
+	"func_exponential.inl"
+
+1459078534 c:\users\antonino\desktop\opengltest\pt\\glm\detail\func_exponential.inl
+	"func_vector_relational.hpp"
+	"_vectorize.hpp"
+	<limits>
+	<cmath>
+	<cassert>
+
+1459078542 c:\users\antonino\desktop\opengltest\pt\\glm\detail\func_vector_relational.hpp
+	"precision.hpp"
+	"setup.hpp"
+	"func_vector_relational.inl"
+
+1459078543 c:\users\antonino\desktop\opengltest\pt\\glm\detail\func_vector_relational.inl
+	<limits>
+
+1459078529 c:\users\antonino\desktop\opengltest\pt\\glm\common.hpp
+	"detail/func_common.hpp"
+
+1459078532 c:\users\antonino\desktop\opengltest\pt\\glm\detail\func_common.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"type_int.hpp"
+	"_fixes.hpp"
+	"func_common.inl"
+
+1459078532 c:\users\antonino\desktop\opengltest\pt\\glm\detail\func_common.inl
+	"func_vector_relational.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"_vectorize.hpp"
+	<limits>
+
+1459078750 c:\users\antonino\desktop\opengltest\pt\\glm\packing.hpp
+	"detail/func_packing.hpp"
+
+1459078540 c:\users\antonino\desktop\opengltest\pt\\glm\detail\func_packing.hpp
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"func_packing.inl"
+
+1459078541 c:\users\antonino\desktop\opengltest\pt\\glm\detail\func_packing.inl
+	"func_common.hpp"
+	"type_half.hpp"
+	"../fwd.hpp"
+
+1459078561 c:\users\antonino\desktop\opengltest\pt\\glm\detail\type_half.hpp
+	"setup.hpp"
+	"type_half.inl"
+
+1459078562 c:\users\antonino\desktop\opengltest\pt\\glm\detail\type_half.inl
+
+1459078605 c:\users\antonino\desktop\opengltest\pt\\glm\geometric.hpp
+	"detail/func_geometric.hpp"
+
+1459078535 c:\users\antonino\desktop\opengltest\pt\\glm\detail\func_geometric.hpp
+	"type_vec3.hpp"
+	"func_geometric.inl"
+
+1459078535 c:\users\antonino\desktop\opengltest\pt\\glm\detail\func_geometric.inl
+	"func_exponential.hpp"
+	"func_common.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_float.hpp"
+
+1459078750 c:\users\antonino\desktop\opengltest\pt\\glm\matrix.hpp
+	"detail/func_matrix.hpp"
+
+1459078539 c:\users\antonino\desktop\opengltest\pt\\glm\detail\func_matrix.hpp
+	"../detail/precision.hpp"
+	"../detail/setup.hpp"
+	"../detail/type_mat.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	"func_matrix.inl"
+
+1459078539 c:\users\antonino\desktop\opengltest\pt\\glm\detail\func_matrix.inl
+	"../geometric.hpp"
+	<limits>
+
+1459078753 c:\users\antonino\desktop\opengltest\pt\\glm\vector_relational.hpp
+	"detail/func_vector_relational.hpp"
+
+1459078741 c:\users\antonino\desktop\opengltest\pt\\glm\integer.hpp
+	"detail/func_integer.hpp"
+
+1459078536 c:\users\antonino\desktop\opengltest\pt\\glm\detail\func_integer.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"func_common.hpp"
+	"func_vector_relational.hpp"
+	"func_integer.inl"
+
+1459078537 c:\users\antonino\desktop\opengltest\pt\\glm\detail\func_integer.inl
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_int.hpp"
+	"_vectorize.hpp"
+	<intrin.h>
+	<limits>
+
+1459078619 c:\users\antonino\desktop\opengltest\pt\\glm\gtc\matrix_transform.hpp
+	"../mat4x4.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"matrix_transform.inl"
+
+1459078610 c:\users\antonino\desktop\opengltest\pt\\glm\gtc\constants.hpp
+	"../detail/setup.hpp"
+	"constants.inl"
+
+1459078611 c:\users\antonino\desktop\opengltest\pt\\glm\gtc\constants.inl
+	<limits>
+
+1459078620 c:\users\antonino\desktop\opengltest\pt\\glm\gtc\matrix_transform.inl
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"../matrix.hpp"
+
+1459078633 c:\users\antonino\desktop\opengltest\pt\\glm\gtc\type_ptr.hpp
+	"../gtc/quaternion.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	<cstring>
+	"type_ptr.inl"
+
+1459078624 c:\users\antonino\desktop\opengltest\pt\\glm\gtc\quaternion.hpp
+	"../mat3x3.hpp"
+	"../mat4x4.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"quaternion.inl"
+
+1459078625 c:\users\antonino\desktop\opengltest\pt\\glm\gtc\quaternion.inl
+	"../trigonometric.hpp"
+	"../geometric.hpp"
+	"../exponential.hpp"
+	<limits>
+
+1459078634 c:\users\antonino\desktop\opengltest\pt\\glm\gtc\type_ptr.inl
+	<cstring>
+
+1459078525 source:c:\users\antonino\desktop\opengltest\pt\input.h
+	<iostream>
+	<fstream>
+	<vector>
+	<stdio.h>
+	<GL/glew.h>
+	<GL/gl.h>
+	<SDL2/SDL.h>
+	<SDL2/SDL_opengl.h>
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+
+1459078754 source:c:\users\antonino\desktop\opengltest\pt\loadshader.h
+
+1459078525 source:c:\users\antonino\desktop\opengltest\pt\main.h
+
+1489601739 source:d:\oldesktop\opengltest\pt\input.cpp
+	"input.h"
+
+1459074925 d:\oldesktop\opengltest\pt\input.h
+	<iostream>
+	<fstream>
+	<vector>
+	<stdio.h>
+	<GL/glew.h>
+	<GL/gl.h>
+	<SDL2/SDL.h>
+	<SDL2/SDL_opengl.h>
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+
+1459075006 d:\oldesktop\opengltest\pt\glm\glm.hpp
+	"detail/_fixes.hpp"
+	<cmath>
+	<climits>
+	<cfloat>
+	<limits>
+	<cassert>
+	"fwd.hpp"
+	"vec2.hpp"
+	"vec3.hpp"
+	"vec4.hpp"
+	"mat2x2.hpp"
+	"mat2x3.hpp"
+	"mat2x4.hpp"
+	"mat3x2.hpp"
+	"mat3x3.hpp"
+	"mat3x4.hpp"
+	"mat4x2.hpp"
+	"mat4x3.hpp"
+	"mat4x4.hpp"
+	"trigonometric.hpp"
+	"exponential.hpp"
+	"common.hpp"
+	"packing.hpp"
+	"geometric.hpp"
+	"matrix.hpp"
+	"vector_relational.hpp"
+	"integer.hpp"
+
+1459074998 d:\oldesktop\opengltest\pt\glm\detail\_fixes.hpp
+	<cmath>
+
+1459075004 d:\oldesktop\opengltest\pt\glm\fwd.hpp
+	"detail/type_int.hpp"
+	"detail/type_float.hpp"
+	"detail/type_vec.hpp"
+	"detail/type_mat.hpp"
+
+1459074962 d:\oldesktop\opengltest\pt\glm\detail\type_int.hpp
+	"setup.hpp"
+	<type_traits>
+	<cstdint>
+
+1459074956 d:\oldesktop\opengltest\pt\glm\detail\setup.hpp
+	<cassert>
+	<cstddef>
+	<cuda.h>
+	<intrin.h>
+	<immintrin.h>
+	<immintrin.h>
+	<smmintrin.h>
+	<pmmintrin.h>
+	<emmintrin.h>
+	<__config>
+
+1459074958 d:\oldesktop\opengltest\pt\glm\detail\type_float.hpp
+	"setup.hpp"
+
+1459074982 d:\oldesktop\opengltest\pt\glm\detail\type_vec.hpp
+	"precision.hpp"
+	"type_int.hpp"
+
+1459074956 d:\oldesktop\opengltest\pt\glm\detail\precision.hpp
+
+1459074963 d:\oldesktop\opengltest\pt\glm\detail\type_mat.hpp
+	"precision.hpp"
+
+1459075151 d:\oldesktop\opengltest\pt\glm\vec2.hpp
+	"detail/type_vec2.hpp"
+
+1459074986 d:\oldesktop\opengltest\pt\glm\detail\type_vec2.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec2.inl"
+
+1459075000 d:\oldesktop\opengltest\pt\glm\detail\_swizzle.hpp
+
+1459075001 d:\oldesktop\opengltest\pt\glm\detail\_swizzle_func.hpp
+
+1459074987 d:\oldesktop\opengltest\pt\glm\detail\type_vec2.inl
+
+1459075152 d:\oldesktop\opengltest\pt\glm\vec3.hpp
+	"detail/type_vec3.hpp"
+
+1459074989 d:\oldesktop\opengltest\pt\glm\detail\type_vec3.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec3.inl"
+
+1459074991 d:\oldesktop\opengltest\pt\glm\detail\type_vec3.inl
+
+1459075153 d:\oldesktop\opengltest\pt\glm\vec4.hpp
+	"detail/type_vec4.hpp"
+
+1459074992 d:\oldesktop\opengltest\pt\glm\detail\type_vec4.hpp
+	"setup.hpp"
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec4.inl"
+
+1459074994 d:\oldesktop\opengltest\pt\glm\detail\type_vec4.inl
+	"type_vec4_sse2.inl"
+	"type_vec4_avx.inl"
+	"type_vec4_avx2.inl"
+
+1459074997 d:\oldesktop\opengltest\pt\glm\detail\type_vec4_sse2.inl
+
+1459074995 d:\oldesktop\opengltest\pt\glm\detail\type_vec4_avx.inl
+
+1459074996 d:\oldesktop\opengltest\pt\glm\detail\type_vec4_avx2.inl
+
+1459075142 d:\oldesktop\opengltest\pt\glm\mat2x2.hpp
+	"detail/type_mat2x2.hpp"
+
+1459074966 d:\oldesktop\opengltest\pt\glm\detail\type_mat2x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x2.inl"
+
+1459074967 d:\oldesktop\opengltest\pt\glm\detail\type_mat2x2.inl
+
+1459075143 d:\oldesktop\opengltest\pt\glm\mat2x3.hpp
+	"detail/type_mat2x3.hpp"
+
+1459074968 d:\oldesktop\opengltest\pt\glm\detail\type_mat2x3.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x3.inl"
+
+1459074969 d:\oldesktop\opengltest\pt\glm\detail\type_mat2x3.inl
+
+1459075144 d:\oldesktop\opengltest\pt\glm\mat2x4.hpp
+	"detail/type_mat2x4.hpp"
+
+1459074969 d:\oldesktop\opengltest\pt\glm\detail\type_mat2x4.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x4.inl"
+
+1459074970 d:\oldesktop\opengltest\pt\glm\detail\type_mat2x4.inl
+
+1459075145 d:\oldesktop\opengltest\pt\glm\mat3x2.hpp
+	"detail/type_mat3x2.hpp"
+
+1459074971 d:\oldesktop\opengltest\pt\glm\detail\type_mat3x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x2.inl"
+
+1459074972 d:\oldesktop\opengltest\pt\glm\detail\type_mat3x2.inl
+
+1459075146 d:\oldesktop\opengltest\pt\glm\mat3x3.hpp
+	"detail/type_mat3x3.hpp"
+
+1459074972 d:\oldesktop\opengltest\pt\glm\detail\type_mat3x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x3.inl"
+
+1459074973 d:\oldesktop\opengltest\pt\glm\detail\type_mat3x3.inl
+
+1459075146 d:\oldesktop\opengltest\pt\glm\mat3x4.hpp
+	"detail/type_mat3x4.hpp"
+
+1459074975 d:\oldesktop\opengltest\pt\glm\detail\type_mat3x4.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x4.inl"
+
+1459074976 d:\oldesktop\opengltest\pt\glm\detail\type_mat3x4.inl
+
+1459075147 d:\oldesktop\opengltest\pt\glm\mat4x2.hpp
+	"detail/type_mat4x2.hpp"
+
+1459074977 d:\oldesktop\opengltest\pt\glm\detail\type_mat4x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x2.inl"
+
+1459074978 d:\oldesktop\opengltest\pt\glm\detail\type_mat4x2.inl
+
+1459075148 d:\oldesktop\opengltest\pt\glm\mat4x3.hpp
+	"detail/type_mat4x3.hpp"
+
+1459074978 d:\oldesktop\opengltest\pt\glm\detail\type_mat4x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x3.inl"
+
+1459074979 d:\oldesktop\opengltest\pt\glm\detail\type_mat4x3.inl
+
+1459075149 d:\oldesktop\opengltest\pt\glm\mat4x4.hpp
+	"detail/type_mat4x4.hpp"
+
+1459074980 d:\oldesktop\opengltest\pt\glm\detail\type_mat4x4.hpp
+	"../fwd.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x4.inl"
+
+1459074981 d:\oldesktop\opengltest\pt\glm\detail\type_mat4x4.inl
+
+1459075151 d:\oldesktop\opengltest\pt\glm\trigonometric.hpp
+	"detail/func_trigonometric.hpp"
+
+1459074941 d:\oldesktop\opengltest\pt\glm\detail\func_trigonometric.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"func_trigonometric.inl"
+
+1459074942 d:\oldesktop\opengltest\pt\glm\detail\func_trigonometric.inl
+	"_vectorize.hpp"
+	<cmath>
+	<limits>
+
+1459075002 d:\oldesktop\opengltest\pt\glm\detail\_vectorize.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+
+1459074984 d:\oldesktop\opengltest\pt\glm\detail\type_vec1.hpp
+	"../fwd.hpp"
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec1.inl"
+
+1459074984 d:\oldesktop\opengltest\pt\glm\detail\type_vec1.inl
+
+1459075003 d:\oldesktop\opengltest\pt\glm\exponential.hpp
+	"detail/func_exponential.hpp"
+
+1459074933 d:\oldesktop\opengltest\pt\glm\detail\func_exponential.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	<cmath>
+	"func_exponential.inl"
+
+1459074934 d:\oldesktop\opengltest\pt\glm\detail\func_exponential.inl
+	"func_vector_relational.hpp"
+	"_vectorize.hpp"
+	<limits>
+	<cmath>
+	<cassert>
+
+1459074942 d:\oldesktop\opengltest\pt\glm\detail\func_vector_relational.hpp
+	"precision.hpp"
+	"setup.hpp"
+	"func_vector_relational.inl"
+
+1459074943 d:\oldesktop\opengltest\pt\glm\detail\func_vector_relational.inl
+	<limits>
+
+1459074929 d:\oldesktop\opengltest\pt\glm\common.hpp
+	"detail/func_common.hpp"
+
+1459074932 d:\oldesktop\opengltest\pt\glm\detail\func_common.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"type_int.hpp"
+	"_fixes.hpp"
+	"func_common.inl"
+
+1459074932 d:\oldesktop\opengltest\pt\glm\detail\func_common.inl
+	"func_vector_relational.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"_vectorize.hpp"
+	<limits>
+
+1459075150 d:\oldesktop\opengltest\pt\glm\packing.hpp
+	"detail/func_packing.hpp"
+
+1459074940 d:\oldesktop\opengltest\pt\glm\detail\func_packing.hpp
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"func_packing.inl"
+
+1459074941 d:\oldesktop\opengltest\pt\glm\detail\func_packing.inl
+	"func_common.hpp"
+	"type_half.hpp"
+	"../fwd.hpp"
+
+1459074961 d:\oldesktop\opengltest\pt\glm\detail\type_half.hpp
+	"setup.hpp"
+	"type_half.inl"
+
+1459074962 d:\oldesktop\opengltest\pt\glm\detail\type_half.inl
+
+1459075005 d:\oldesktop\opengltest\pt\glm\geometric.hpp
+	"detail/func_geometric.hpp"
+
+1459074935 d:\oldesktop\opengltest\pt\glm\detail\func_geometric.hpp
+	"type_vec3.hpp"
+	"func_geometric.inl"
+
+1459074935 d:\oldesktop\opengltest\pt\glm\detail\func_geometric.inl
+	"func_exponential.hpp"
+	"func_common.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_float.hpp"
+
+1459075150 d:\oldesktop\opengltest\pt\glm\matrix.hpp
+	"detail/func_matrix.hpp"
+
+1459074939 d:\oldesktop\opengltest\pt\glm\detail\func_matrix.hpp
+	"../detail/precision.hpp"
+	"../detail/setup.hpp"
+	"../detail/type_mat.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	"func_matrix.inl"
+
+1459074939 d:\oldesktop\opengltest\pt\glm\detail\func_matrix.inl
+	"../geometric.hpp"
+	<limits>
+
+1459075153 d:\oldesktop\opengltest\pt\glm\vector_relational.hpp
+	"detail/func_vector_relational.hpp"
+
+1459075141 d:\oldesktop\opengltest\pt\glm\integer.hpp
+	"detail/func_integer.hpp"
+
+1459074936 d:\oldesktop\opengltest\pt\glm\detail\func_integer.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"func_common.hpp"
+	"func_vector_relational.hpp"
+	"func_integer.inl"
+
+1459074937 d:\oldesktop\opengltest\pt\glm\detail\func_integer.inl
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_int.hpp"
+	"_vectorize.hpp"
+	<intrin.h>
+	<limits>
+
+1459075019 d:\oldesktop\opengltest\pt\glm\gtc\matrix_transform.hpp
+	"../mat4x4.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"matrix_transform.inl"
+
+1459075010 d:\oldesktop\opengltest\pt\glm\gtc\constants.hpp
+	"../detail/setup.hpp"
+	"constants.inl"
+
+1459075011 d:\oldesktop\opengltest\pt\glm\gtc\constants.inl
+	<limits>
+
+1459075020 d:\oldesktop\opengltest\pt\glm\gtc\matrix_transform.inl
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"../matrix.hpp"
+
+1459075033 d:\oldesktop\opengltest\pt\glm\gtc\type_ptr.hpp
+	"../gtc/quaternion.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	<cstring>
+	"type_ptr.inl"
+
+1459075024 d:\oldesktop\opengltest\pt\glm\gtc\quaternion.hpp
+	"../mat3x3.hpp"
+	"../mat4x4.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"quaternion.inl"
+
+1459075025 d:\oldesktop\opengltest\pt\glm\gtc\quaternion.inl
+	"../trigonometric.hpp"
+	"../geometric.hpp"
+	"../exponential.hpp"
+	<limits>
+
+1459075034 d:\oldesktop\opengltest\pt\glm\gtc\type_ptr.inl
+	<cstring>
+
+1460032421 source:d:\oldesktop\opengltest\pt\loadshader.cpp
+	<iostream>
+	<fstream>
+	<vector>
+	<stdio.h>
+	<GL/glew.h>
+	<GL/gl.h>
+	<SDL2/SDL.h>
+	<SDL2/SDL_opengl.h>
+	"loadShader.h"
+
+1459075154 d:\oldesktop\opengltest\pt\loadshader.h
+
+1489605889 source:d:\oldesktop\opengltest\pt\main.cpp
+	<iostream>
+	<fstream>
+	<vector>
+	<stdio.h>
+	<GL/glew.h>
+	<GL/gl.h>
+	<SDL2/SDL.h>
+	<SDL2/SDL_opengl.h>
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+	"main.h"
+	"loadShader.h"
+	"input.h"
+
+1459074925 d:\oldesktop\opengltest\pt\main.h
+
+1439236042 c:\glew\include\gl\glew.h
+	<stddef.h>
+	<inttypes.h>
+	<stdint.h>
+	<inttypes.h>
+	<Availability.h>
+	<OpenGL/glu.h>
+	<GL/glu.h>
+
+1394253593 c:\sdl\sdl2-2.0.4\include\sdl2\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_assert.h"
+	"SDL_atomic.h"
+	"SDL_audio.h"
+	"SDL_clipboard.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_filesystem.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_haptic.h"
+	"SDL_hints.h"
+	"SDL_loadso.h"
+	"SDL_log.h"
+	"SDL_messagebox.h"
+	"SDL_mutex.h"
+	"SDL_power.h"
+	"SDL_render.h"
+	"SDL_rwops.h"
+	"SDL_system.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_version.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\sdl\sdl2-2.0.4\include\sdl2\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\sdl\sdl2-2.0.4\include\sdl2\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<math.h>
+	<iconv.h>
+	"begin_code.h"
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	"close_code.h"
+
+1394253593 c:\sdl\sdl2-2.0.4\include\sdl2\sdl_config.h
+	"SDL_platform.h"
+
+1394253593 c:\sdl\sdl2-2.0.4\include\sdl2\sdl_platform.h
+	"AvailabilityMacros.h"
+	"TargetConditionals.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\sdl\sdl2-2.0.4\include\sdl2\begin_code.h
+
+1394253593 c:\sdl\sdl2-2.0.4\include\sdl2\close_code.h
+
+1394253593 c:\sdl\sdl2-2.0.4\include\sdl2\sdl_assert.h
+	"SDL_config.h"
+	"begin_code.h"
+	<signal.h>
+	"close_code.h"
+
+1394253593 c:\sdl\sdl2-2.0.4\include\sdl2\sdl_atomic.h
+	"SDL_stdinc.h"
+	"SDL_platform.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\sdl\sdl2-2.0.4\include\sdl2\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\sdl\sdl2-2.0.4\include\sdl2\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\sdl\sdl2-2.0.4\include\sdl2\sdl_endian.h
+	"SDL_stdinc.h"
+	<endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\sdl\sdl2-2.0.4\include\sdl2\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\sdl\sdl2-2.0.4\include\sdl2\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_atomic.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	"close_code.h"
+
+1394253593 c:\sdl\sdl2-2.0.4\include\sdl2\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\sdl\sdl2-2.0.4\include\sdl2\sdl_clipboard.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\sdl\sdl2-2.0.4\include\sdl2\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<intrin.h>
+	<altivec.h>
+	<mmintrin.h>
+	<mm3dnow.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\sdl\sdl2-2.0.4\include\sdl2\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_quit.h"
+	"SDL_gesture.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\sdl\sdl2-2.0.4\include\sdl2\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\sdl\sdl2-2.0.4\include\sdl2\sdl_pixels.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\sdl\sdl2-2.0.4\include\sdl2\sdl_rect.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_pixels.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\sdl\sdl2-2.0.4\include\sdl2\sdl_surface.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_blendmode.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\sdl\sdl2-2.0.4\include\sdl2\sdl_blendmode.h
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\sdl\sdl2-2.0.4\include\sdl2\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keycode.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\sdl\sdl2-2.0.4\include\sdl2\sdl_keycode.h
+	"SDL_stdinc.h"
+	"SDL_scancode.h"
+
+1394253593 c:\sdl\sdl2-2.0.4\include\sdl2\sdl_scancode.h
+	"SDL_stdinc.h"
+
+1394253593 c:\sdl\sdl2-2.0.4\include\sdl2\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\sdl\sdl2-2.0.4\include\sdl2\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\sdl\sdl2-2.0.4\include\sdl2\sdl_gamecontroller.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\sdl\sdl2-2.0.4\include\sdl2\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1394253593 c:\sdl\sdl2-2.0.4\include\sdl2\sdl_gesture.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\sdl\sdl2-2.0.4\include\sdl2\sdl_touch.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\sdl\sdl2-2.0.4\include\sdl2\sdl_filesystem.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\sdl\sdl2-2.0.4\include\sdl2\sdl_haptic.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\sdl\sdl2-2.0.4\include\sdl2\sdl_hints.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\sdl\sdl2-2.0.4\include\sdl2\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\sdl\sdl2-2.0.4\include\sdl2\sdl_log.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\sdl\sdl2-2.0.4\include\sdl2\sdl_messagebox.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\sdl\sdl2-2.0.4\include\sdl2\sdl_power.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\sdl\sdl2-2.0.4\include\sdl2\sdl_render.h
+	"SDL_stdinc.h"
+	"SDL_rect.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\sdl\sdl2-2.0.4\include\sdl2\sdl_system.h
+	"SDL_stdinc.h"
+	"SDL_keyboard.h"
+	"SDL_render.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\sdl\sdl2-2.0.4\include\sdl2\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\sdl\sdl2-2.0.4\include\sdl2\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1394253593 c:\sdl\sdl2-2.0.4\include\sdl2\sdl_opengl.h
+	"SDL_config.h"
+	<windows.h>
+	<OpenGL/gl.h>
+	<GL/gl.h>
+	<windows.h>
+	<stddef.h>
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+	<stdint.h>
+	<stdint.h>
+	<inttypes.h>
+
+1451764693 c:\sdl\sdl2-2.0.4\i686-w64-mingw32\include\sdl2\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_assert.h"
+	"SDL_atomic.h"
+	"SDL_audio.h"
+	"SDL_clipboard.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_filesystem.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_haptic.h"
+	"SDL_hints.h"
+	"SDL_loadso.h"
+	"SDL_log.h"
+	"SDL_messagebox.h"
+	"SDL_mutex.h"
+	"SDL_power.h"
+	"SDL_render.h"
+	"SDL_rwops.h"
+	"SDL_system.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_version.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764693 c:\sdl\sdl2-2.0.4\i686-w64-mingw32\include\sdl2\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764693 c:\sdl\sdl2-2.0.4\i686-w64-mingw32\include\sdl2\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<math.h>
+	<float.h>
+	<iconv.h>
+	<sal.h>
+	"begin_code.h"
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	"close_code.h"
+
+1451764693 c:\sdl\sdl2-2.0.4\i686-w64-mingw32\include\sdl2\sdl_config.h
+	"SDL_platform.h"
+
+1451764693 c:\sdl\sdl2-2.0.4\i686-w64-mingw32\include\sdl2\sdl_platform.h
+	"AvailabilityMacros.h"
+	"TargetConditionals.h"
+	<winapifamily.h>
+	"begin_code.h"
+	"close_code.h"
+
+1451764693 c:\sdl\sdl2-2.0.4\i686-w64-mingw32\include\sdl2\begin_code.h
+
+1451764693 c:\sdl\sdl2-2.0.4\i686-w64-mingw32\include\sdl2\close_code.h
+
+1451764693 c:\sdl\sdl2-2.0.4\i686-w64-mingw32\include\sdl2\sdl_assert.h
+	"SDL_config.h"
+	"begin_code.h"
+	<signal.h>
+	"close_code.h"
+
+1451764693 c:\sdl\sdl2-2.0.4\i686-w64-mingw32\include\sdl2\sdl_atomic.h
+	"SDL_stdinc.h"
+	"SDL_platform.h"
+	"begin_code.h"
+	<mbarrier.h>
+	"close_code.h"
+
+1451764693 c:\sdl\sdl2-2.0.4\i686-w64-mingw32\include\sdl2\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764693 c:\sdl\sdl2-2.0.4\i686-w64-mingw32\include\sdl2\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764693 c:\sdl\sdl2-2.0.4\i686-w64-mingw32\include\sdl2\sdl_endian.h
+	"SDL_stdinc.h"
+	<endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1451764693 c:\sdl\sdl2-2.0.4\i686-w64-mingw32\include\sdl2\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764693 c:\sdl\sdl2-2.0.4\i686-w64-mingw32\include\sdl2\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_atomic.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	"close_code.h"
+
+1451764693 c:\sdl\sdl2-2.0.4\i686-w64-mingw32\include\sdl2\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764693 c:\sdl\sdl2-2.0.4\i686-w64-mingw32\include\sdl2\sdl_clipboard.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764693 c:\sdl\sdl2-2.0.4\i686-w64-mingw32\include\sdl2\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<intrin.h>
+	<altivec.h>
+	<mmintrin.h>
+	<mm3dnow.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	"begin_code.h"
+	"close_code.h"
+
+1451764693 c:\sdl\sdl2-2.0.4\i686-w64-mingw32\include\sdl2\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_quit.h"
+	"SDL_gesture.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764693 c:\sdl\sdl2-2.0.4\i686-w64-mingw32\include\sdl2\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764693 c:\sdl\sdl2-2.0.4\i686-w64-mingw32\include\sdl2\sdl_pixels.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764693 c:\sdl\sdl2-2.0.4\i686-w64-mingw32\include\sdl2\sdl_rect.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_pixels.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764693 c:\sdl\sdl2-2.0.4\i686-w64-mingw32\include\sdl2\sdl_surface.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_blendmode.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764693 c:\sdl\sdl2-2.0.4\i686-w64-mingw32\include\sdl2\sdl_blendmode.h
+	"begin_code.h"
+	"close_code.h"
+
+1451764693 c:\sdl\sdl2-2.0.4\i686-w64-mingw32\include\sdl2\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keycode.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764693 c:\sdl\sdl2-2.0.4\i686-w64-mingw32\include\sdl2\sdl_keycode.h
+	"SDL_stdinc.h"
+	"SDL_scancode.h"
+
+1451764693 c:\sdl\sdl2-2.0.4\i686-w64-mingw32\include\sdl2\sdl_scancode.h
+	"SDL_stdinc.h"
+
+1451764693 c:\sdl\sdl2-2.0.4\i686-w64-mingw32\include\sdl2\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764693 c:\sdl\sdl2-2.0.4\i686-w64-mingw32\include\sdl2\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764693 c:\sdl\sdl2-2.0.4\i686-w64-mingw32\include\sdl2\sdl_gamecontroller.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764693 c:\sdl\sdl2-2.0.4\i686-w64-mingw32\include\sdl2\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1451764693 c:\sdl\sdl2-2.0.4\i686-w64-mingw32\include\sdl2\sdl_gesture.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764693 c:\sdl\sdl2-2.0.4\i686-w64-mingw32\include\sdl2\sdl_touch.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764693 c:\sdl\sdl2-2.0.4\i686-w64-mingw32\include\sdl2\sdl_filesystem.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764693 c:\sdl\sdl2-2.0.4\i686-w64-mingw32\include\sdl2\sdl_haptic.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764693 c:\sdl\sdl2-2.0.4\i686-w64-mingw32\include\sdl2\sdl_hints.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764693 c:\sdl\sdl2-2.0.4\i686-w64-mingw32\include\sdl2\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764693 c:\sdl\sdl2-2.0.4\i686-w64-mingw32\include\sdl2\sdl_log.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764693 c:\sdl\sdl2-2.0.4\i686-w64-mingw32\include\sdl2\sdl_messagebox.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764693 c:\sdl\sdl2-2.0.4\i686-w64-mingw32\include\sdl2\sdl_power.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764693 c:\sdl\sdl2-2.0.4\i686-w64-mingw32\include\sdl2\sdl_render.h
+	"SDL_stdinc.h"
+	"SDL_rect.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764693 c:\sdl\sdl2-2.0.4\i686-w64-mingw32\include\sdl2\sdl_system.h
+	"SDL_stdinc.h"
+	"SDL_keyboard.h"
+	"SDL_render.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764693 c:\sdl\sdl2-2.0.4\i686-w64-mingw32\include\sdl2\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764693 c:\sdl\sdl2-2.0.4\i686-w64-mingw32\include\sdl2\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764693 c:\sdl\sdl2-2.0.4\i686-w64-mingw32\include\sdl2\sdl_opengl.h
+	"SDL_config.h"
+	"gl_mangle.h"
+	<windows.h>
+	"SDL_opengl_glext.h"
+
+1451764693 c:\sdl\sdl2-2.0.4\i686-w64-mingw32\include\sdl2\sdl_opengl_glext.h
+	<windows.h>
+	<stddef.h>
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+	<stdint.h>
+	<stdint.h>
+	<inttypes.h>
+
+1451764783 c:\sdl\sdl2-2.0.4\x86_64-w64-mingw32\include\sdl2\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_assert.h"
+	"SDL_atomic.h"
+	"SDL_audio.h"
+	"SDL_clipboard.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_filesystem.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_haptic.h"
+	"SDL_hints.h"
+	"SDL_loadso.h"
+	"SDL_log.h"
+	"SDL_messagebox.h"
+	"SDL_mutex.h"
+	"SDL_power.h"
+	"SDL_render.h"
+	"SDL_rwops.h"
+	"SDL_system.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_version.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764783 c:\sdl\sdl2-2.0.4\x86_64-w64-mingw32\include\sdl2\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764783 c:\sdl\sdl2-2.0.4\x86_64-w64-mingw32\include\sdl2\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<math.h>
+	<float.h>
+	<iconv.h>
+	<sal.h>
+	"begin_code.h"
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	"close_code.h"
+
+1451764783 c:\sdl\sdl2-2.0.4\x86_64-w64-mingw32\include\sdl2\sdl_config.h
+	"SDL_platform.h"
+
+1451764783 c:\sdl\sdl2-2.0.4\x86_64-w64-mingw32\include\sdl2\sdl_platform.h
+	"AvailabilityMacros.h"
+	"TargetConditionals.h"
+	<winapifamily.h>
+	"begin_code.h"
+	"close_code.h"
+
+1451764783 c:\sdl\sdl2-2.0.4\x86_64-w64-mingw32\include\sdl2\begin_code.h
+
+1451764783 c:\sdl\sdl2-2.0.4\x86_64-w64-mingw32\include\sdl2\close_code.h
+
+1451764783 c:\sdl\sdl2-2.0.4\x86_64-w64-mingw32\include\sdl2\sdl_assert.h
+	"SDL_config.h"
+	"begin_code.h"
+	<signal.h>
+	"close_code.h"
+
+1451764783 c:\sdl\sdl2-2.0.4\x86_64-w64-mingw32\include\sdl2\sdl_atomic.h
+	"SDL_stdinc.h"
+	"SDL_platform.h"
+	"begin_code.h"
+	<mbarrier.h>
+	"close_code.h"
+
+1451764783 c:\sdl\sdl2-2.0.4\x86_64-w64-mingw32\include\sdl2\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764783 c:\sdl\sdl2-2.0.4\x86_64-w64-mingw32\include\sdl2\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764783 c:\sdl\sdl2-2.0.4\x86_64-w64-mingw32\include\sdl2\sdl_endian.h
+	"SDL_stdinc.h"
+	<endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1451764783 c:\sdl\sdl2-2.0.4\x86_64-w64-mingw32\include\sdl2\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764783 c:\sdl\sdl2-2.0.4\x86_64-w64-mingw32\include\sdl2\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_atomic.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	"close_code.h"
+
+1451764783 c:\sdl\sdl2-2.0.4\x86_64-w64-mingw32\include\sdl2\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764783 c:\sdl\sdl2-2.0.4\x86_64-w64-mingw32\include\sdl2\sdl_clipboard.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764783 c:\sdl\sdl2-2.0.4\x86_64-w64-mingw32\include\sdl2\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<intrin.h>
+	<altivec.h>
+	<mmintrin.h>
+	<mm3dnow.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	"begin_code.h"
+	"close_code.h"
+
+1451764783 c:\sdl\sdl2-2.0.4\x86_64-w64-mingw32\include\sdl2\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_quit.h"
+	"SDL_gesture.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764783 c:\sdl\sdl2-2.0.4\x86_64-w64-mingw32\include\sdl2\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764783 c:\sdl\sdl2-2.0.4\x86_64-w64-mingw32\include\sdl2\sdl_pixels.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764783 c:\sdl\sdl2-2.0.4\x86_64-w64-mingw32\include\sdl2\sdl_rect.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_pixels.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764783 c:\sdl\sdl2-2.0.4\x86_64-w64-mingw32\include\sdl2\sdl_surface.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_blendmode.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764783 c:\sdl\sdl2-2.0.4\x86_64-w64-mingw32\include\sdl2\sdl_blendmode.h
+	"begin_code.h"
+	"close_code.h"
+
+1451764783 c:\sdl\sdl2-2.0.4\x86_64-w64-mingw32\include\sdl2\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keycode.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764783 c:\sdl\sdl2-2.0.4\x86_64-w64-mingw32\include\sdl2\sdl_keycode.h
+	"SDL_stdinc.h"
+	"SDL_scancode.h"
+
+1451764783 c:\sdl\sdl2-2.0.4\x86_64-w64-mingw32\include\sdl2\sdl_scancode.h
+	"SDL_stdinc.h"
+
+1451764783 c:\sdl\sdl2-2.0.4\x86_64-w64-mingw32\include\sdl2\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764783 c:\sdl\sdl2-2.0.4\x86_64-w64-mingw32\include\sdl2\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764783 c:\sdl\sdl2-2.0.4\x86_64-w64-mingw32\include\sdl2\sdl_gamecontroller.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764783 c:\sdl\sdl2-2.0.4\x86_64-w64-mingw32\include\sdl2\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1451764783 c:\sdl\sdl2-2.0.4\x86_64-w64-mingw32\include\sdl2\sdl_gesture.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764783 c:\sdl\sdl2-2.0.4\x86_64-w64-mingw32\include\sdl2\sdl_touch.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764783 c:\sdl\sdl2-2.0.4\x86_64-w64-mingw32\include\sdl2\sdl_filesystem.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764783 c:\sdl\sdl2-2.0.4\x86_64-w64-mingw32\include\sdl2\sdl_haptic.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764783 c:\sdl\sdl2-2.0.4\x86_64-w64-mingw32\include\sdl2\sdl_hints.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764783 c:\sdl\sdl2-2.0.4\x86_64-w64-mingw32\include\sdl2\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764783 c:\sdl\sdl2-2.0.4\x86_64-w64-mingw32\include\sdl2\sdl_log.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764783 c:\sdl\sdl2-2.0.4\x86_64-w64-mingw32\include\sdl2\sdl_messagebox.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764783 c:\sdl\sdl2-2.0.4\x86_64-w64-mingw32\include\sdl2\sdl_power.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764783 c:\sdl\sdl2-2.0.4\x86_64-w64-mingw32\include\sdl2\sdl_render.h
+	"SDL_stdinc.h"
+	"SDL_rect.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764783 c:\sdl\sdl2-2.0.4\x86_64-w64-mingw32\include\sdl2\sdl_system.h
+	"SDL_stdinc.h"
+	"SDL_keyboard.h"
+	"SDL_render.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764783 c:\sdl\sdl2-2.0.4\x86_64-w64-mingw32\include\sdl2\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764783 c:\sdl\sdl2-2.0.4\x86_64-w64-mingw32\include\sdl2\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1451764783 c:\sdl\sdl2-2.0.4\x86_64-w64-mingw32\include\sdl2\sdl_opengl.h
+	"SDL_config.h"
+	"gl_mangle.h"
+	<windows.h>
+	"SDL_opengl_glext.h"
+
+1451764783 c:\sdl\sdl2-2.0.4\x86_64-w64-mingw32\include\sdl2\sdl_opengl_glext.h
+	<windows.h>
+	<stddef.h>
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+	<stdint.h>
+	<stdint.h>
+	<inttypes.h>
+
