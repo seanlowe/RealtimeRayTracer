@@ -1,4 +1,4 @@
-#version 450
+#version 330
 out vec3 color;
 in vec2 ScreenCoord;
 #define PI 3.14159265359
@@ -44,8 +44,8 @@ float IntersectSphere(ray r,sphere sph)
 	float b = dot(op , r.d);
 	float det = b * b - dot(op,op) + sph.rad * sph.rad;
 	         // ^ Solves t^2*d.d + 2*t*(o-p).d + (o-p).(o-p)-R^2 = 0
-	if(det < 0)return 0;else det = sqrt(det);
-	return (t = b - det) > eps ? t : ((t=b+det)>eps ? t:0);
+	if(det < 0)return 0.0;else det = sqrt(det);
+	return (t = b - det) > eps ? t : ((t=b+det)>eps ? t:0.0);
 }
 
 struct disk
