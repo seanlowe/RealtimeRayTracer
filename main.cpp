@@ -1,28 +1,19 @@
-#include<iostream>
-#include<fstream>
-#include<vector>
-#include<stdio.h>
-#include<GL/glew.h>
-#include<GL/gl.h>
-#include<SDL2/SDL.h>
-#include<SDL2/SDL_opengl.h>
-#include <glm/glm.hpp>
-#include <glm/gtc/matrix_transform.hpp>
-#include <glm/gtc/type_ptr.hpp>
-#include"main.h"
-#include"loadShader.h"
-#include"input.h"
+#include "loadShader.h"
+
+#define TARG_FPS 58
+
 SDL_Window* Window = NULL;
 SDL_GLContext Context;
 GLuint VertexArrayID;
 GLuint vertexbuffer;
 GLuint PathTracerPogram;
-GLuint CamRotMatrix ,CamRotMatrixOld ,CamPosition ,OldPosition ,samplecount ,bounces , AspectRatio, Gtime;
+GLuint CamRotMatrix, CamRotMatrixOld, CamPosition, OldPosition, samplecount, bounces, AspectRatio, Gtime;
 
-#define TARG_FPS 58
+int width = 0, height = 0, ColorDepth = 0, flags = 0;
+void init();
+void DrawPlane();
 
-/*bool initGL()
-{
+/*bool initGL() {
 	bool success = true;
 	GLenum error = GL_NO_ERROR;
 	 //Sets clear color
@@ -37,68 +28,51 @@ GLuint CamRotMatrix ,CamRotMatrixOld ,CamPosition ,OldPosition ,samplecount ,bou
 	 return success;
 }*/
 
-void init()
-{
-	//Initialize SDL
-	 if( SDL_Init( SDL_INIT_VIDEO ) < 0 )
-	 {
-
-		 printf( "SDL could not initialize! SDL Error: %s\n", SDL_GetError() );
-     }
-     else
-     {
-		 //Use OpenGL 4.5
-		 SDL_GL_SetAttribute(SDL_GL_ACCELERATED_VISUAL, 1);
-		 SDL_GL_SetAttribute( SDL_GL_CONTEXT_MAJOR_VERSION, 3 );
-		 SDL_GL_SetAttribute( SDL_GL_CONTEXT_MINOR_VERSION, 3 );
-		 //Create window
-		 Window = SDL_CreateWindow( "SDL Tutorial", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, width, height, SDL_WINDOW_OPENGL | SDL_WINDOW_SHOWN );
-		 if( Window == NULL )
-		 {
-			 printf( "Window could not be created! SDL Error: %s\n", SDL_GetError() );
-	     }
-	     else
-	     {
-	     //SDL_SetWindowFullscreen(Window,SDL_WINDOW_FULLSCREEN_DESKTOP);
-
-			 //Create context
-			 Context = SDL_GL_CreateContext( Window );
-			 if( Context == NULL )
-			 {
-				 printf( "OpenGL context could not be created! SDL Error: %s\n", SDL_GetError() );
-			 }
-			 else
-			{
-		     //Use Vsync(coomment to disable)
-		     /*if( SDL_GL_SetSwapInterval( 1 ) < 0 )
-			 {
+void init() {
+	// Initialize SDL
+	if (SDL_Init( SDL_INIT_VIDEO ) < 0) {
+	    printf( "SDL could not initialize! SDL Error: %s\n", SDL_GetError() );
+    } else {
+		// Use OpenGL 4.5
+		SDL_GL_SetAttribute(SDL_GL_ACCELERATED_VISUAL, 1);
+		SDL_GL_SetAttribute( SDL_GL_CONTEXT_MAJOR_VERSION, 3 );
+		SDL_GL_SetAttribute( SDL_GL_CONTEXT_MINOR_VERSION, 3 );
+		// Create window
+		Window = SDL_CreateWindow( "SDL Tutorial", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, width, height, SDL_WINDOW_OPENGL | SDL_WINDOW_SHOWN );
+		if (Window == NULL) {
+		    printf( "Window could not be created! SDL Error: %s\n", SDL_GetError() );
+	    } else {
+	    //SDL_SetWindowFullscreen(Window,SDL_WINDOW_FULLSCREEN_DESKTOP);
+			// Create context
+			Context = SDL_GL_CreateContext( Window );
+			if (Context == NULL) {
+			    printf( "OpenGL context could not be created! SDL Error: %s\n", SDL_GetError() );
+			} else {
+		     //Use Vsync (comment to disable)
+		     /*if (SDL_GL_SetSwapInterval( 1 ) < 0) {
 				 printf( "Warning: Unable to set VSync! SDL Error: %s\n", SDL_GetError() );
 			 }*/
-
 	        }
-
-	      }
-     }
+	    }
+    }
 
     SDL_SetRelativeMouseMode(SDL_TRUE);
     GLenum rev;
     glewExperimental = GL_TRUE;
     rev = glewInit();
-    if(rev != GLEW_OK)
-    {
+    if (rev != GLEW_OK) {
 		std::cout<<"Error: " << glewGetErrorString(rev) << std::endl;
     }
 
 
     glGenVertexArrays(1, &VertexArrayID);
 
-    static const GLfloat g_vertex_buffer_data[] =
-    {
+    static const GLfloat g_vertex_buffer_data[] = {
      -1.0f, -1.0f, 0.0f,
-     1.0f, -1.0f, 0.0f,
+      1.0f, -1.0f, 0.0f,
      -1.0f,  1.0f, 0.0f,
-     1.0f, 1.0f, 0.0f,
-     1.0f, -1.0f, 0.0f,
+      1.0f,  1.0f, 0.0f,
+      1.0f, -1.0f, 0.0f,
      -1.0f,  1.0f, 0.0f,
     };
 
@@ -112,45 +86,38 @@ void init()
     glBindBuffer(GL_ARRAY_BUFFER, vertexbuffer);
     glVertexAttribPointer(0,3,GL_FLOAT,GL_FALSE,0,(void*)0);
     glUseProgram(PathTracerPogram);
-    CamRotMatrix = glGetUniformLocation(PathTracerPogram,"rotation");
+    CamRotMatrix    = glGetUniformLocation(PathTracerPogram,"rotation");
     CamRotMatrixOld = glGetUniformLocation(PathTracerPogram,"OldRotation");
-    OldPosition    = glGetUniformLocation(PathTracerPogram,"positionOld");
-    CamPosition  = glGetUniformLocation(PathTracerPogram,"position");
-    bounces      = glGetUniformLocation(PathTracerPogram,"MAXDEPTH");
-    samplecount  = glGetUniformLocation(PathTracerPogram,"SAMPLESPF");
-    AspectRatio = glGetUniformLocation(PathTracerPogram,"AspectRatio");
-    Gtime         = glGetUniformLocation(PathTracerPogram,"Time");
+    OldPosition     = glGetUniformLocation(PathTracerPogram,"positionOld");
+    CamPosition     = glGetUniformLocation(PathTracerPogram,"position");
+    bounces         = glGetUniformLocation(PathTracerPogram,"MAXDEPTH");
+    samplecount     = glGetUniformLocation(PathTracerPogram,"SAMPLESPF");
+    AspectRatio     = glGetUniformLocation(PathTracerPogram,"AspectRatio");
+    Gtime           = glGetUniformLocation(PathTracerPogram,"Time");
 }
 
-void DrawPlane()
-{
-
+void DrawPlane() {
 	//glClear(GL_COLOR_BUFFER_BIT);
-
     glDrawArrays(GL_TRIANGLES, 0, 6); // Starting from vertex 0; 3 vertices total -> 1 triangle
     SDL_GL_SwapWindow(Window);
-
 }
 
-int main( int argc, char *argv[])
-{
+int main (int argc, char *argv[]) {
     float Delta,TickNow = 0.,TickLast  = 0.;
-     input_handler::CamTrasform CTr;
-     input_handler testInput;
-     testInput.Speed = .1;
-	 width  = 1920;
-	 height = 1080;
-	 glClearColor(0.0f,0.0f,0.0f,1.0f);
-	 init();
-	 glUniform1f(AspectRatio, float(width)/height);
-     glUniform1i(samplecount,100);
-     float time;
-     mat4 CamRotOld;
-     vec3 PosOld;
-
-     float fspp = 10;
-     while (testInput.wasdqe[6])
-     {
+    input_handler::CamTrasform CTr;
+    input_handler testInput;
+    testInput.Speed = .1;
+	width  = 1920;
+	height = 1080;
+	glClearColor(0.0f,0.0f,0.0f,1.0f);
+	init();
+	glUniform1f(AspectRatio, float(width)/height);
+    glUniform1i(samplecount,100);
+    float time;
+    mat4 CamRotOld;
+    vec3 PosOld;
+    float fspp = 10;
+    while (testInput.wasdqe[6]) {
         Delta = (TickNow = SDL_GetTicks()) - TickLast;
         TickLast = TickNow;
         float fps = 1000/Delta;
